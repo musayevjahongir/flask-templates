@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 </head>
 <body>
 
@@ -15,6 +16,8 @@
             </li>
         {% endfor %}
     </ul>
+
+    <a href="{{ url_for('about') }}">about page</a>
     
 </body>
 </html>
